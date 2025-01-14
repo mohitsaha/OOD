@@ -24,7 +24,7 @@ public class VendingMachine {
         // Initialize states
         this.noMoneyState = new NoMoneyInsertedState(this);
         this.hasMoneyState = new MoneyInsertedState(this);
-        this.dispenseState = new DispenseState();
+        this.dispenseState = new DispenseState(this);
 
         // Set initial state
         this.currentState = noMoneyState;

@@ -1,6 +1,12 @@
 package com.learning.vendingMachine;
 
 public class DispenseState implements VendingMachineState{
+
+    VendingMachine vendingMachine;
+
+    public DispenseState(VendingMachine vendingMachine) {
+    }
+
     @Override
     public void insertMoney(VendingMachine machine, double amount) {
 
